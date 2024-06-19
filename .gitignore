@@ -1,0 +1,24 @@
+demo-broken/symfony/public/build/fonts/glyphicons-*
+demo-broken/symfony/public/build/images/glyphicons-*
+demo-broken/profiles/*
+demo-broken/symfony.php-version
+
+###> symfony/framework-bundle ###
+demo-broken/symfony/.env.local
+demo-broken/symfony/.env.local.php
+demo-broken/symfony/.env.*.local
+demo-broken/symfony/config/secrets/prod/prod.decrypt.private.php
+demo-broken/symfony/public/bundles/
+demo-broken/symfony/var/
+demo-broken/symfony/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+demo-broken/symfony.phpunit.result.cache
+demo-broken/symfony/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/asset-mapper ###
+demo-broken/symfony/public/assets/
+demo-broken/symfony/assets/vendor/
+###< symfony/asset-mapper ###

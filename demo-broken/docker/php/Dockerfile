@@ -28,9 +28,9 @@ RUN docker-php-ext-install \
 RUN pecl install xdebug; \
     docker-php-ext-enable xdebug
 
-#folder for xhprof profiles (same as in file xhprof.ini)
-RUN mkdir -m 777 /profiles
-
+#folder for xdebug profiles
+RUN mkdir -m 777  /tmp/profiles
+RUN chmod 777 /tmp/profiles
 # Set timezone
 RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && echo ${TIMEZONE} > /etc/timezone \
     && printf '[PHP]\ndate.timezone = "%s"\n', ${TIMEZONE} > /usr/local/etc/php/conf.d/tzone.ini \
